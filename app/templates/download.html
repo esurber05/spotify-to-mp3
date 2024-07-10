@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Download Progress</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='js/download.js') }}"></script>
+</head>
+<body>
+    <h1>Downloading Playlist's Tracks...</h1>
+    
+    <div id="current-track-download">
+        <span>Currently downloading... </span>
+        <span id="current-track-download-text"></span>
+    </div>
+
+    <div id="track-progress-container">
+        <progress id="track-progress-bar" value="0" max="100"></progress>
+        <span id="track-progress-text">0%</span>
+        <span id="track-speed-text"></span>
+    </div>
+
+    <div id="track-number-container">
+        <span id="tracks-completed-text">0</span>
+        <span>/</span>
+        <span id="total-tracks-text">0</span>
+    </div>
+</body>
+</html>

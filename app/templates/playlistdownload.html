@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Download Playlist</title>
+</head>
+<body>
+    <h1>Click Button Below to Download Playlist</h1>
+    <a href="{{ url_for('download.send_playlist', file_path='playlist/' + playlist_file) }}">Download Playlist</a>
+</body>
+</html>

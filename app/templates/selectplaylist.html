@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Playlist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Select an Playlist to Start Downloading</h1>
+    <form action="/download" method="post">
+        <select name="playlist">
+            {% for playlist in playlists %}
+                <option value="{{ playlist }}">{{ playlist }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Begin Download</button>
+    </form>
+</body>
+</html>
