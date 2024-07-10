@@ -62,6 +62,3 @@ This tool allows users to download tracks from their Spotify playlists directly 
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - [FFmpeg](https://ffmpeg.org/)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
