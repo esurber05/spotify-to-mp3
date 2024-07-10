@@ -33,7 +33,7 @@ This tool allows users to download tracks from their Spotify playlists directly 
     ```
 
 4. **Set up config variables**:
-    - Create a `config.py` file and add your Spotify API and sesssion information:
+    - Create a `config.py` file and add your Spotify API and session information:
         ```env
         CLIENT_ID='your-client-id'
         CLIENT_SECRET='your-client-secret'
