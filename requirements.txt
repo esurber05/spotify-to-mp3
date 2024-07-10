@@ -3,4 +3,3 @@ flask-socketio
 spotipy
 yt-dlp
 requests
-zipfile
